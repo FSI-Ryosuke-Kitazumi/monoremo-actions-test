@@ -28,7 +28,7 @@ class SampleControllerTest {
          * then:
          * - スタブ化した値から ResponseEntity が生成されていることを確認する
          */
-        val expected = ResponseEntity(PersonResponse(Person(name = "Bob", age = 23)), HttpStatus.OK)
+        val expected = ResponseEntity(PersonResponse(Person(name = "Bob", age = 24)), HttpStatus.OK)
         assertEquals(actual, expected)
     }
 }
