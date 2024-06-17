@@ -4,10 +4,6 @@ on:
     branches:
       - master
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
   frontend:
     runs-on: ubuntu-latest
@@ -36,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./backend/demo
     permissions:
       contents: read
 
